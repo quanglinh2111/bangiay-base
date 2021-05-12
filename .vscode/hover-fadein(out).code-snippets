@@ -1,0 +1,18 @@
+{"Hover-fadeIn": {
+	"prefix": "Hover_FadeIn_Out",
+	"body": [
+	  "$('.box').mouseenter(function(){",
+	  "  $(\".seemore\").removeClass(\"animated fadeOut\"); ",
+	  "  $(\".seemore\").css(\"visibility\", \"visible\");           $(\".seemore\").addClass(\"animated fadeIn\");",
+	  "   ",
+	  "})",
+	  "$('.box').mouseleave(function(){   ",
+	  " $(\".seemore\").removeClass(\"animated fadeIn\");        $(\".seemore\").addClass(\"animated fadeOut\");",
+	  "  $('#seemore').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){$(\".seemore\").css(\"visibility\", \"hidden\");",
+	  "  } );       ",
+	  "})",
+	  "",
+	  ""
+	],
+	"description": "Hover-fadeIn"
+  }}
